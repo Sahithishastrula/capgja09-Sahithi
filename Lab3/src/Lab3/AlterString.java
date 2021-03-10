@@ -34,10 +34,10 @@ public class AlterString {
 	                } 
 	            } 
 	        }
-		  String res=" ";
+		 /* String res=" ";
 	      for(int i=0;i<s.length;i++)
-	        	res=res+s[i];
-		System.out.println("Modifies String is:"+res);
+	        	res=res+s[i];*/
+		System.out.println("Modifies String is:"+String.valueOf(s));
 	    } 
 	
 
@@ -45,6 +45,7 @@ public class AlterString {
 		// TODO Auto-generated method stub
 		
 		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter the input String:");
 		String str=sc.nextLine();
 		str=str.toUpperCase();
 		char[] ch=str.toCharArray();
