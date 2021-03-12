@@ -5,16 +5,14 @@ public class ModifyNum {
 		String s=String.valueOf(n);
 		StringBuffer temp=new StringBuffer();
 		int l=s.length();
-		for(int i=1;i<l-1;i++) {
-			int a= s.charAt(i-1);
-			int b=s.charAt(i);
+		for(int i=0;i<l-1;i++) {
+			int a= Integer.parseInt(String.valueOf(s.charAt(i)));		
+			int b=Integer.parseInt(String.valueOf(s.charAt(i+1)));	
 			int c=Math.abs(a-b);
 			temp.append( c);
-			System.out.println(a+""+b+""+c);
 		}
-		int last=s.charAt(l-1);
-		temp.append(last);
-		System.out.println(l);
+		int last=Integer.parseInt(String.valueOf(s.charAt(l-1)));	;
+		System.out.println(temp+""+last);
 	}
 
 	public static void main(String[] args) {
